@@ -1,0 +1,12 @@
+sensors:
+ - sensor_plugin: occupancy_map_monitor/DepthImageOctomapUpdater
+   image_topic: /kinect2/filtered_sd/image_depth_rect
+   queue_size: 50
+   near_clippign_plane_distance: 0.51
+   far_clipping_plane_distance: 2.49
+   skip_vertical_pixels: 1
+   skip_horizontal_pixels: 1
+   shadow_threshold: 2.5
+   padding_scale: 0.0
+   padding_offset: 0.0
+   update_rate: 3.0

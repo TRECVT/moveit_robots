@@ -1,0 +1,10 @@
+sensors:
+ - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
+   # this is a dummy plugin that shouldn't do any filtering
+   point_cloud_topic: /kinect2/filtered_sd/points
+   max_range: 2.51 # make this slightly longer to avoid max range artifacts
+   # introduced by the earlier filtering
+   padding_offset: 0
+   padding_scale: 1.0
+   frame_subsample: 1
+   point_subsample: 1
